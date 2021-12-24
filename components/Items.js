@@ -37,6 +37,21 @@ const Items = (props) => {
       serviceType: 'Premium',
       price: 10700,
     },
+    {
+      serviceId: 3,
+      serviceType: 'Simple',
+      price: 6500,
+    },
+    {
+      serviceId: 3,
+      serviceType: 'Combo Disney Plus + Star Plus',
+      price: 10500,
+    },
+    {
+      serviceId: 4,
+      serviceType: 'Simple',
+      price: 4165,
+    },
   ];
 
   const filteredItems = serviceDetails.filter(
@@ -47,7 +62,7 @@ const Items = (props) => {
       {filteredItems.map((item) => (
         <div>
           <h4>{item.serviceType}</h4>
-          <h5>{item.price}</h5>
+          <h5>${item.price}</h5>
         </div>
       ))}
     </div>
