@@ -52,6 +52,16 @@ const Items = (props) => {
       serviceType: 'Simple',
       price: 4165,
     },
+    {
+      serviceId: 5,
+      serviceType: 'Móvil',
+      price: 4900,
+    },
+    {
+      serviceId: 5,
+      serviceType: 'Estándar',
+      price: 6900,
+    },
   ];
 
   const filteredItems = serviceDetails.filter(
